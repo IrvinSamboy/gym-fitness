@@ -1,0 +1,56 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore compiled source files
+*.css.map
+*.scssc
+
+# Ignore WordPress core files (not needed in a theme repo)
+wp-admin/
+wp-includes/
+*.log
+
+# Ignore node modules and dependencies
+node_modules/
+bower_components/
+vendor/
+
+# Ignore compiled assets and cache
+*.min.css
+*.min.js
+*.map
+*.log
+*.cache
+
+# Ignore environment configuration files
+.env
+.env.local
+.env.*.local
+
+# Ignore temporary files
+*.bak
+*.swp
+*.swo
+
+# Ignore package managers lock files
+package-lock.json
+yarn.lock
+composer.lock
+
+# Ignore WordPress uploads (optional, unless handling media in repo)
+wp-content/uploads/
+
+# Ignore database and local config files
+wp-content/debug.log
+wp-content/*.sql
+wp-content/*.sqlite
+
+# Ignore compiled assets (if using a build process)
+build/
+dist/
+
+# Ignore backup files
+*.zip
+*.tar
+*.gz
