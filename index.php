@@ -6,6 +6,24 @@
     <title>Document</title>
 </head>
 <body>
+
+    <header>
+        <div class="container navbar">
+            <img src="<?php get_template_directory_uri() ?>/img/logo.svg" alt="logo">
+        </div>
+
+        <?php
+            $args = array(
+                'theme_location' => 'main-menu',
+                "container" => "nav",
+                "container_class" => "main-menu"
+            );
+
+            wp_nav_menu($args)
+        ?>
+
+    </header>
+
     <main>
         <?php
             while(have_posts()) : 
