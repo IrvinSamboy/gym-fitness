@@ -32,7 +32,7 @@
                 
                 the_post();
 
-                the_title();
+                the_title('<h1 class="text-primary text-center">', '</h1>');
 
                 the_content();
             endwhile;

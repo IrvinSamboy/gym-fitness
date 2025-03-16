@@ -91,10 +91,10 @@ hr {
     text-align: center;
 }
 .text-primary {
-    color: var(--primario);
+    color: var(--primary);
 }
 .text-blanco {
-    color: var(--blanco);
+    color: var(--white);
 }
 .seccion {
     padding: 5rem 0;
@@ -140,11 +140,11 @@ hr {
     padding: 0.5rem 2.5rem;
 }
 
-.main-menu .current_page_item{
-    border-bottom: 3px solid var(--primary);
-}
 
 @media(min-width: 768px){
+    .main-menu .current_page_item{
+        border-bottom: 3px solid var(--primary);
+    }
     .main-menu a {
         position: relative;
         z-index: 1;
