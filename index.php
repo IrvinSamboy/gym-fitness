@@ -8,12 +8,12 @@
 </head>
 <body>
 
-    <header>
+    <header class="header">
         <div class="container navbar">
-            <img src="<?php echo get_template_directory_uri()?>/img/logo.svg" alt="logo">
-        </div>
-
-        <?php
+            <div class="logo">
+                <img src="<?php echo get_template_directory_uri()?>/img/logo.svg" alt="logo">
+            </div>
+            <?php
             $args = array(
                 'theme_location' => 'main-menu',
                 "container" => "nav",
@@ -22,6 +22,7 @@
 
             wp_nav_menu($args)
         ?>
+        </div>
 
     </header>
 

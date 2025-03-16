@@ -12,16 +12,16 @@
 */
 
 :root {
-    /** Fuentes **/
+    /** Fonts **/
     --fuente-principal: 'Raleway', sans-serif;
     --fuente-headings: 'Staatliches', cursive;
 
-    /** Colores **/
-    --primario: #ff5b00;
-    --gris-oscuro: #2f2e2e;
-    --gris-claro: #EBEBEB;
-    --blanco: #FFF;
-    --negro: #000;
+    /** Colors **/
+    --primary: #ff5b00;
+    --dark-gray: #2f2e2e;
+    --light-gray: #EBEBEB;
+    --white: #FFF;
+    --black: #000;
 }
 html {
     box-sizing: border-box;
@@ -58,7 +58,7 @@ h4 {
     font-size: 2.4rem;
 }
 
-/** Globales **/
+/** Globals **/
 p {
     margin: 0;
 }
@@ -77,4 +77,38 @@ img {
 }
 hr {
     border: 1px solid var(--gris-claro);
+}
+
+.container{
+    width: (95%, 120rem);
+    margin: 0 auto;
+}
+
+.header{
+    background-color: var(--dark-gray);
+    padding: 2rem;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(min-width: 768px) {
+    .navbar{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.main-menu ul{
+    display: none;
+}
+
+@media(min-width: 768px) {
+    .main-menu ul{
+        display: flex;
+    }
 }
