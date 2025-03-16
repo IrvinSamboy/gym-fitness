@@ -84,6 +84,23 @@ hr {
     margin: 0 auto;
 }
 
+/** Utils **/
+
+.text-center {
+    text-align: center;
+}
+.text-primary {
+    color: var(--primario);
+}
+.text-blanco {
+    color: var(--blanco);
+}
+.seccion {
+    padding: 5rem 0;
+}
+
+/** Header **/
+
 .header{
     background-color: var(--dark-gray);
     padding: 2rem;
