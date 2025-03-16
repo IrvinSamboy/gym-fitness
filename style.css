@@ -90,6 +90,10 @@ hr {
     margin: 0 auto;
 }
 
+.center-content{
+    width: (95%, 80rem);
+}
+
 /** Utils **/
 
 .text-center {
@@ -101,9 +105,10 @@ hr {
 .text-blanco {
     color: var(--white);
 }
-.seccion {
+.section {
     padding: 5rem 0;
 }
+
 
 /** Header **/
 
