@@ -195,7 +195,7 @@ hr {
     padding: 4rem 0;
 }
 @media (min-width: 768px) {
-    .contenido-footer {
+    .footer-content {
         display: flex;
         justify-content: space-between;
     }
@@ -210,4 +210,17 @@ hr {
 .footer .main-menu a::before, 
 .footer .main-menu a::after {
     display: none;
+}
+
+.copyright {
+    text-align: center;
+    font-family: var(--headings-font);
+    font-size: 1.8rem;
+    margin: 2rem 0 0 0;
+}
+@media (min-width: 768px) {
+    .copyright {
+        font-size: 2.4rem;
+        margin: 0;
+    }
 }

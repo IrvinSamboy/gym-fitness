@@ -14,6 +14,9 @@
                 
                 wp_nav_menu($args);
             ?>
+
+            <p class="copyright">All rights reserved. <?php echo get_bloginfo('name') . " " . date('Y'); ?></p>
+
         </div>
    </footer>
 
