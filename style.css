@@ -86,12 +86,12 @@ hr {
 }
 
 .container{
-    width: (95%, 120rem);
+    width: min(95%, 120rem);
     margin: 0 auto;
 }
 
 .center-content{
-    width: (95%, 80rem);
+    width: min(95%, 80rem);
 }
 
 /** Utils **/

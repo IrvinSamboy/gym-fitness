@@ -2,7 +2,7 @@
     get_header()
 ?>
 
-    <main>
+    <main class="container section">
         <?php
             while(have_posts()) : 
                 
