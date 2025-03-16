@@ -137,4 +137,44 @@ hr {
     text-align: center;
     color: var(--white);
     font-size: 2.2rem;
+    padding: 0.5rem 2.5rem;
+}
+
+.main-menu .current_page_item{
+    border-bottom: 3px solid var(--primary);
+}
+
+@media(min-width: 768px){
+    .main-menu a {
+        position: relative;
+        z-index: 1;
+    }
+
+    .main-menu a::before, 
+    .main-menu a::after {
+        position: absolute;
+        left: 0;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 50%;
+        background-color: var(--primario);
+        z-index: -1;
+        transform: scaleX(0);
+        transition: transform .6s;
+    }
+    .main-menu a::before {
+        top: 0;
+        transform-origin: left;
+    }
+    .main-menu a::after {
+        top:50%;
+        transform-origin: right;
+    }
+    .main-menu a:hover::before {
+        transform: scaleX(1);
+    }
+    .main-menu a:hover::after {
+        transform: scaleX(1);
+    }
 }
