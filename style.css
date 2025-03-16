@@ -76,6 +76,11 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+.featured_image{
+    margin-bottom: 3rem;
+}
+
 hr {
     border: 1px solid var(--gris-claro);
 }
